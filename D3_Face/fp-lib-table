@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name D3_Face)(type KiCad)(uri ${KIPRJMOD}/D3_Face.pretty)(options "")(descr ""))
+)

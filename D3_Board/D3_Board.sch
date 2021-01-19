@@ -1,0 +1,76 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60028755
+P 4250 3800
+F 0 "#PWR?" H 4250 3550 50  0001 C CNN
+F 1 "GND" H 4255 3627 50  0000 C CNN
+F 2 "" H 4250 3800 50  0001 C CNN
+F 3 "" H 4250 3800 50  0001 C CNN
+	1    4250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60029F1F
+P 4400 1650
+F 0 "C?" V 4652 1650 50  0000 C CNN
+F 1 "C" V 4561 1650 50  0000 C CNN
+F 2 "" H 4438 1500 50  0001 C CNN
+F 3 "~" H 4400 1650 50  0001 C CNN
+	1    4400 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L bluepill:BP U1
+U 1 1 60026670
+P 4100 2750
+F 0 "U1" H 4100 4003 60  0000 C CNB
+F 1 "BP" H 4100 3897 60  0000 C CNN
+F 2 "BP:BLUEPILL" H 4000 3500 60  0001 C CNN
+F 3 "" H 4000 3500 60  0001 C CNN
+	1    4100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6002F40F
+P 4550 1650
+F 0 "#PWR?" H 4550 1400 50  0001 C CNN
+F 1 "GND" H 4555 1477 50  0000 C CNN
+F 2 "" H 4550 1650 50  0001 C CNN
+F 3 "" H 4550 1650 50  0001 C CNN
+	1    4550 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1650 4250 1700
+$Comp
+L power:+5V #PWR?
+U 1 1 600350C6
+P 4250 1550
+F 0 "#PWR?" H 4250 1400 50  0001 C CNN
+F 1 "+5V" H 4265 1723 50  0000 C CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1550 4250 1650
+Connection ~ 4250 1650
+$EndSCHEMATC
