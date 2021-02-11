@@ -1,4 +1,296 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bluepill:ChinaBluePill U?
+U 1 1 60255F2F
+P 2400 2050
+F 0 "U?" H 2400 2865 50  0000 C CNN
+F 1 "ChinaBluePill" H 2400 2774 50  0000 C CNN
+F 2 "bluepill:BluePill_STM32F103C" H 2400 2050 50  0001 C CNN
+F 3 "" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M?
+U 1 1 60264176
+P 4300 1450
+F 0 "M?" H 4632 1515 50  0000 L CNN
+F 1 "Motor_Servo" H 4632 1424 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4300 1260 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4300 1260 50  0001 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M?
+U 1 1 60268010
+P 4300 2200
+F 0 "M?" H 4632 2265 50  0000 L CNN
+F 1 "Motor_Servo" H 4632 2174 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4300 2010 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4300 2010 50  0001 C CNN
+	1    4300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6026986A
+P 3900 1300
+F 0 "#PWR?" H 3900 1150 50  0001 C CNN
+F 1 "+5V" H 3915 1473 50  0000 C CNN
+F 2 "" H 3900 1300 50  0001 C CNN
+F 3 "" H 3900 1300 50  0001 C CNN
+	1    3900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6026A43D
+P 3900 2050
+F 0 "#PWR?" H 3900 1900 50  0001 C CNN
+F 1 "+5V" H 3915 2223 50  0000 C CNN
+F 2 "" H 3900 2050 50  0001 C CNN
+F 3 "" H 3900 2050 50  0001 C CNN
+	1    3900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6026F6EC
+P 3900 2350
+F 0 "#PWR?" H 3900 2100 50  0001 C CNN
+F 1 "GND" H 3905 2177 50  0000 C CNN
+F 2 "" H 3900 2350 50  0001 C CNN
+F 3 "" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60279EC5
+P 3900 1600
+F 0 "#PWR?" H 3900 1350 50  0001 C CNN
+F 1 "GND" H 3905 1427 50  0000 C CNN
+F 2 "" H 3900 1600 50  0001 C CNN
+F 3 "" H 3900 1600 50  0001 C CNN
+	1    3900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1300 3900 1450
+Wire Wire Line
+	3900 1450 4000 1450
+Wire Wire Line
+	4000 1550 3900 1550
+Wire Wire Line
+	3900 1550 3900 1600
+Wire Wire Line
+	4000 2300 3900 2300
+Wire Wire Line
+	3900 2300 3900 2350
+Wire Wire Line
+	4000 2200 3900 2200
+Wire Wire Line
+	3900 2200 3900 2050
+Wire Wire Line
+	3800 2100 4000 2100
+Wire Wire Line
+	4000 1350 3800 1350
+$Comp
+L lm2596_module:YAAJ_DCDC_StepUp_SX1308 U?
+U 1 1 602847F8
+P 1750 4050
+F 0 "U?" H 1750 4315 50  0000 C CNN
+F 1 "LM2596_module" H 1750 4224 50  0000 C CNN
+F 2 "" H 1750 4050 50  0001 C CNN
+F 3 "" H 1750 4050 50  0001 C CNN
+	1    1750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L lm2596_module:YAAJ_DCDC_StepUp_SX1308 U?
+U 1 1 60286EEB
+P 2950 4050
+F 0 "U?" H 2950 4315 50  0000 C CNN
+F 1 "LM2596_module" H 2950 4224 50  0000 C CNN
+F 2 "" H 2950 4050 50  0001 C CNN
+F 3 "" H 2950 4050 50  0001 C CNN
+	1    2950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60288291
+P 1650 4450
+F 0 "#PWR?" H 1650 4200 50  0001 C CNN
+F 1 "GND" H 1655 4277 50  0000 C CNN
+F 2 "" H 1650 4450 50  0001 C CNN
+F 3 "" H 1650 4450 50  0001 C CNN
+	1    1650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6028870F
+P 1850 4450
+F 0 "#PWR?" H 1850 4200 50  0001 C CNN
+F 1 "GND" H 1855 4277 50  0000 C CNN
+F 2 "" H 1850 4450 50  0001 C CNN
+F 3 "" H 1850 4450 50  0001 C CNN
+	1    1850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6028885C
+P 2850 4450
+F 0 "#PWR?" H 2850 4200 50  0001 C CNN
+F 1 "GND" H 2855 4277 50  0000 C CNN
+F 2 "" H 2850 4450 50  0001 C CNN
+F 3 "" H 2850 4450 50  0001 C CNN
+	1    2850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60288BCD
+P 3050 4450
+F 0 "#PWR?" H 3050 4200 50  0001 C CNN
+F 1 "GND" H 3055 4277 50  0000 C CNN
+F 2 "" H 3050 4450 50  0001 C CNN
+F 3 "" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6028AED9
+P 1300 4000
+F 0 "#PWR?" H 1300 3850 50  0001 C CNN
+F 1 "+12V" H 1315 4173 50  0000 C CNN
+F 2 "" H 1300 4000 50  0001 C CNN
+F 3 "" H 1300 4000 50  0001 C CNN
+	1    1300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6028B929
+P 2500 4000
+F 0 "#PWR?" H 2500 3850 50  0001 C CNN
+F 1 "+12V" H 2515 4173 50  0000 C CNN
+F 2 "" H 2500 4000 50  0001 C CNN
+F 3 "" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4000 2500 4050
+$Comp
+L power:+5V #PWR?
+U 1 1 6028D127
+P 2200 4000
+F 0 "#PWR?" H 2200 3850 50  0001 C CNN
+F 1 "+5V" H 2215 4173 50  0000 C CNN
+F 2 "" H 2200 4000 50  0001 C CNN
+F 3 "" H 2200 4000 50  0001 C CNN
+	1    2200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4000 1300 4050
+Wire Wire Line
+	1300 4050 1350 4050
+Wire Wire Line
+	2150 4050 2200 4050
+Wire Wire Line
+	2200 4050 2200 4000
+Wire Wire Line
+	2550 4050 2500 4050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60294C20
+P 3400 4000
+F 0 "#PWR?" H 3400 3850 50  0001 C CNN
+F 1 "+3.3V" H 3415 4173 50  0000 C CNN
+F 2 "" H 3400 4000 50  0001 C CNN
+F 3 "" H 3400 4000 50  0001 C CNN
+	1    3400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4000 3400 4050
+Wire Wire Line
+	3400 4050 3350 4050
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 602A3FC1
+P 4450 3050
+F 0 "J?" H 4530 3092 50  0000 L CNN
+F 1 "LED_Matrix" H 4530 3001 50  0000 L CNN
+F 2 "" H 4450 3050 50  0001 C CNN
+F 3 "~" H 4450 3050 50  0001 C CNN
+	1    4450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 602A653D
+P 4200 2800
+F 0 "#PWR?" H 4200 2650 50  0001 C CNN
+F 1 "+5V" H 4215 2973 50  0000 C CNN
+F 2 "" H 4200 2800 50  0001 C CNN
+F 3 "" H 4200 2800 50  0001 C CNN
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602A6D94
+P 4200 3350
+F 0 "#PWR?" H 4200 3100 50  0001 C CNN
+F 1 "GND" H 4205 3177 50  0000 C CNN
+F 2 "" H 4200 3350 50  0001 C CNN
+F 3 "" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	1    0    0    -1  
+$EndComp
+Text Label 4050 3050 2    50   ~ 0
+DOUT_LED
+Text Label 4050 3150 2    50   ~ 0
+CS_LED
+Text Label 4050 3250 2    50   ~ 0
+CLK_LED
+Wire Wire Line
+	4050 3050 4250 3050
+Wire Wire Line
+	4250 3150 4050 3150
+Wire Wire Line
+	4250 3250 4050 3250
+Text Label 3800 1350 2    50   ~ 0
+SERVO1
+Text Label 3800 2100 2    50   ~ 0
+SERVO2
+Wire Wire Line
+	4200 2800 4200 2850
+Wire Wire Line
+	4200 2850 4250 2850
+Wire Wire Line
+	4250 2950 4200 2950
+Wire Wire Line
+	4200 2950 4200 3350
 $EndSCHEMATC
