@@ -594,9 +594,9 @@ ENCODER1_A
 Text Label 3000 6200 0    50   ~ 0
 ENCODER1_B
 Text Label 3000 6300 0    50   ~ 0
-ENCODER2_A
-Text Label 3000 6400 0    50   ~ 0
 ENCODER2_B
+Text Label 3000 6400 0    50   ~ 0
+ENCODER2_A
 Wire Wire Line
 	2900 6100 3000 6100
 Wire Wire Line

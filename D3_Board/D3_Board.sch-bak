@@ -1464,19 +1464,16 @@ Wire Wire Line
 Wire Wire Line
 	4750 6100 5350 6100
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J5
 U 1 1 6090485F
-P 1300 4100
-F 0 "J?" H 1380 4092 50  0000 L CNN
-F 1 "CURRENT_POWER_IN" H 1380 4001 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1300 4100 50  0001 C CNN
-F 3 "~" H 1300 4100 50  0001 C CNN
-	1    1300 4100
-	-1   0    0    1   
+P 1300 4000
+F 0 "J5" H 1380 3992 50  0000 L CNN
+F 1 "CURRENT_POWER_IN" H 1380 3901 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1300 4000 50  0001 C CNN
+F 3 "~" H 1300 4000 50  0001 C CNN
+	1    1300 4000
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 4100 1650 4100
-Connection ~ 1650 4100
 Wire Wire Line
 	1950 3950 2850 3950
 Wire Wire Line
@@ -1484,7 +1481,10 @@ Wire Wire Line
 Wire Wire Line
 	2850 3950 2850 4050
 Wire Wire Line
+	1550 4000 1550 3950
+Wire Wire Line
 	1500 4000 1550 4000
 Wire Wire Line
-	1550 4000 1550 3950
+	1500 4100 1650 4100
+Connection ~ 1650 4100
 $EndSCHEMATC
