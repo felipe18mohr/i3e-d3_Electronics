@@ -1,4 +1,11 @@
-19846587312584176
+19973005534735563
+BLUEPILL
+BluePill_STM32F103C
+STM32F103C8 BluePill board
+
+0
+40
+40
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48817,20 +48824,6 @@ ras_logo_11_8mm
 0
 0
 0
-D3_Face
-Matrix_LED_8x8
-
-
-0
-16
-16
-D3_Face
-ras_logo
-
-
-0
-0
-0
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -56272,6 +56265,13 @@ Yellow 5381 Series LED
 0
 2
 2
+LM2596
+lm2596_module
+
+
+0
+4
+4
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
